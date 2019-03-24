@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/emailTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameEditText"
+        android:layout_marginTop="26dp"
+        android:text="Email"
+        android:layout_alignStart="@+id/dateOfBirthTextView" />
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_alignBaseline="@+id/emailTextView"
+        android:layout_alignBottom="@+id/emailTextView"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/dateOfBirthTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emailEditText"
+        android:layout_marginTop="27dp"
+        android:text="Date of Birth"
+        android:layout_alignStart="@+id/heightTextView" />
+
+    <EditText
+        android:id="@+id/dateOfBirthEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/emailEditText"
+        android:layout_alignStart="@+id/registerButton"
+        android:layout_below="@+id/emailEditText"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/heightTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dateOfBirthEditText"
+        android:layout_marginTop="26dp"
+        android:text="Height"
+        android:layout_alignStart="@+id/WeightTextView" />
+
+    <EditText
+        android:id="@+id/heightEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/dateOfBirthEditText"
+        android:layout_below="@+id/dateOfBirthEditText"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/WeightTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heightEditText"
+        android:layout_marginTop="28dp"
+        android:text="Weight"
+        android:layout_alignStart="@+id/passwordTextView" />
+
+    <EditText
+        android:id="@+id/weightEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/heightEditText"
+        android:layout_below="@+id/heightEditText"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/passwordTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:text="Password"
+        android:layout_marginStart="23dp"
+        android:layout_below="@+id/weightEditText"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/passwordTextView"
+        android:layout_alignBottom="@+id/passwordTextView"
+        android:layout_alignStart="@+id/weightEditText"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/confirmPasswordeditText11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/confirmPasswordtextView11"
+        android:layout_alignBottom="@+id/confirmPasswordtextView11"
+        android:layout_alignParentEnd="true"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/nameUserTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/nameEditText"
+        android:layout_alignBottom="@+id/nameEditText"
+        android:layout_alignStart="@+id/emailTextView"
+        android:text="Name" />
+
+    <TextView
+        android:id="@+id/confirmPasswordtextView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordEditText"
+        android:layout_marginTop="24dp"
+        android:text="ConfirmPassword"
+        android:layout_alignStart="@+id/passwordTextView"
+        android:layout_toStartOf="@+id/nameEditText" />
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/confirmPasswordeditText11"
+        android:layout_marginTop="14dp"
+        android:layout_toStartOf="@+id/confirmPasswordeditText11"
+        android:text="Cancel"
+        android:background="@android:color/holo_blue_light"/>
+
+    <Button
+        android:id="@+id/registerButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/cancelButton"
+        android:layout_marginStart="31dp"
+        android:layout_toEndOf="@+id/cancelButton"
+        android:text="Register"
+        android:background="@android:color/holo_blue_light"/>
+
+</RelativeLayout>
